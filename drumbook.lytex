@@ -1,0 +1,103 @@
+\listfiles
+\documentclass[12pt,a4paper,titlepage]{scrreprt}
+
+% Restore "classic" LaTeX font
+\addtokomafont{disposition}{\rmfamily}
+
+\addtokomafont{chapter}{\centering}
+
+% For easy layout tweaking
+\usepackage[left=1.0in, right=1.0in, top=0.2in, bottom=1.0in]{geometry}
+
+\usepackage{layout}
+
+% Hyperlink per indice e note
+\usepackage{hyperref}
+
+% Inserimento di codice sorgente
+%\usepackage{textcomp}
+%\usepackage{verbatim}
+
+\usepackage{graphicx}
+
+% Warkaround for Lilypond system-system-spacing
+\newcommand{\betweenLilyPondSystem}[1]{\vspace{10mm}\linebreak} 
+
+\author{
+	Jacopo Binosi\\
+	\small{
+		\texttt{b4inoz at gmail.com}
+	}
+}
+
+\title{Titolo\\\small{Sottotitolo 1}\\\small{27 Settembre 2014}}
+
+\date{\today}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%
+% Per vedere le specifiche di layout decommentare la riga seguente
+%\layout
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%
+% COVER Page
+
+\newgeometry{left=-0.1in, right=-0.1in, top=-0.1in, bottom=-0.1in}
+\noindent\makebox[\textwidth][b]{
+    \includegraphics[
+        width=\textwidth,
+        height=\dimexpr\textheight-0.1\baselineskip\relax
+        ]{../cover.pdf}
+    }
+\restoregeometry
+
+%%%%%%%%%%%%%%%%%
+
+\maketitle
+
+\begin{abstract}
+Little abstract
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\addchap{Tania Maria  -  Yattrat\`a}
+\label{cha:yattrata}
+\input{chapters/yattrata.lytex}
+
+%% \addchap{Marco Raimondi - We Gio}
+%% \label{cha:wegio}
+%% \input{chapters/marcowegio.lytex}
+%% 
+%% \addchap{Omar Hakim - Molosses Run}
+%% \label{cha:omarhakim}
+%% \input{chapters/omar_hakim.lytex}
+%% 
+%% \addchap{Vinnie Colaiuta - Love is Stronger than Justice}
+%% \label{cha:vinniecolaiuta}
+%% \input{chapters/vinnie_colaiuta.lytex}
+%% 
+%% \addchap{Marco Raimondi - Grooves in 5/4}
+%% \label{cha:marco54}
+%% \input{chapters/marco5quarti.lytex}
+%% 
+%% \addchap{Marco Raimondi - Sunny}
+%% \label{cha:marcosunny}
+%% \input{chapters/marcosunny.lytex}
+%% 
+%% \addchap{Marco Raimondi - So What}
+%% \label{cha:marcosowhat}
+%% \input{chapters/marcosowhat.lytex}
+%% 
+%% \addchap{Marco Raimondi - Clave Ternarie}
+%% \label{cha:marcoclavetern}
+%% \input{chapters/marcoclavetern.lytex}
+
+\end{document}
+
