@@ -3,7 +3,7 @@
 
 \header {
   title = "Molosses Run"
-  subtitle = "Omar Hakim - Weather Report"
+  subtitle = "Weather Report - Batteria originale di Omar Hakim"
 }
 
 \score {

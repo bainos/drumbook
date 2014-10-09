@@ -3,7 +3,7 @@
 
 \header {
   title = "Love is Stronger than Justice"
-  subtitle = "Vinnie Colaiuta - Sting"
+  subtitle = "Sting - Batteria originale di Vinnie Colaiuta"
 }
 
 \score {

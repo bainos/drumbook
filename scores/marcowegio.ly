@@ -3,7 +3,7 @@
 
 \header {
   title = "We Gio"
-  subtitle = "Marco Raimondi"
+  subtitle = "P. Vairo - Batteria originale di Marco Raimondi"
 }
 
 #(define mydrums '(

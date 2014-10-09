@@ -3,7 +3,7 @@
 
 \header {
   title = "So What"
-  subtitle = "Marco Raimondi (Miles Davis)"
+  subtitle = "Miles Davis - Batteria originale di Marco Raimondi"
 }
 
 % Accompagnamento

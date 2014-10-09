@@ -3,7 +3,7 @@
 
 \header {
   title = "Groove in 5/4"
-  subtitle = "Marco Raimondi"
+  subtitle = "Batteria originale di Marco Raimondi"
 }
 
 \score {

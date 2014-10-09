@@ -2,8 +2,9 @@
 \include "../layout/layout.ly"
 
 \header {
-  title = "Foot Prins"
-  subtitle = "Marco Raimond"
+  title = "Footprints"
+  subtitle = "Miles Davis - Batteria originale di Marco Raimond"
+  subsubtitle = "Clave Ternaria"
 }
 
 \score {

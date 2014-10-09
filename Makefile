@@ -1,12 +1,13 @@
 SHELL=/bin/sh
 FILE=drumbook
+WEBFILE=drumbook-web
 OUTDIR=out
 WEBDIR=htmlout
 VIEWER=evince-previewer
 BROWSER=firefox
 ADDRESS=b4inoz at gmail dot com - Last Update: `date +'%y.%m.%d %H:%M:%S'`
 LILYBOOK_PDF=lilypond-book --output=$(OUTDIR) --pdf $(FILE).lytex
-LILYBOOK_HTML=lilypond-book --output=$(WEBDIR) $(FILE).lytex
+LILYBOOK_HTML=lilypond-book --output=$(WEBDIR) $(WEBFILE).lytex
 PDF=cd $(OUTDIR) && pdflatex $(FILE) && pdflatex $(FILE)
 HTML=cd $(WEBDIR) && latex2html \
 	-style=style.css \
@@ -18,9 +19,9 @@ HTML=cd $(WEBDIR) && latex2html \
 	-local_icons \
 	-address "$(ADDRESS)" \
 	-footnode \
-	$(FILE)
-HTMLCSS=cp layout/lilypond-manuals.css $(WEBDIR)/$(FILE)/style.css
-INDEX=cd $(OUTDIR) && makeindex $(FILE)
+	$(WEBFILE)
+HTMLCSS=cp layout/lilypond-manuals.css $(WEBDIR)/$(WEBFILE)/style.css
+#INDEX=cd $(OUTDIR) && makeindex $(FILE)
 PREVIEW=$(VIEWER) $(OUTDIR)/$(FILE).pdf &
 
 all: pdf keep
@@ -36,8 +37,8 @@ web:
 	$(LILYBOOK_HTML) # begin with tab
 	$(HTML)          # begin with tab
 	$(HTMLCSS)       # begin with tab
-	cp -R $(WEBDIR)/$(FILE)/ ./  # begin with tab
-	$(BROWSER) $(FILE)/$(FILE).html &  # begin with tab
+	cp -R $(WEBDIR)/$(WEBFILE)/ ./  # begin with tab
+	$(BROWSER) $(WEBFILE)/$(WEBFILE).html &  # begin with tab
 
 keep: pdf
 	cp $(OUTDIR)/$(FILE).pdf $(FILE).pdf  # begin with tab

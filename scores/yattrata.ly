@@ -2,7 +2,7 @@
 \include "../layout/layout.ly"
 
 \header {
-  title = "Yattra Ta - Intro"
+  title = "Yatra Ta"
   subtitle = "Tania Maria"
 }
 

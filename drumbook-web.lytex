@@ -1,0 +1,80 @@
+\listfiles
+\documentclass[12pt,a4paper,titlepage]{report}
+
+% Restore "classic" LaTeX font
+%\addtokomafont{disposition}{\rmfamily}
+
+%\addtokomafont{chapter}{\centering}
+
+% For easy layout tweaking
+%\usepackage[left=1.0in, right=1.0in, top=0.2in, bottom=1.0in]{geometry}
+
+%\usepackage{layout}
+
+% Hyperlink per indice e note
+%\usepackage{hyperref}
+
+% Inserimento di codice sorgente
+%\usepackage{textcomp}
+%\usepackage{verbatim}
+
+\usepackage{graphicx}
+
+% Warkaround for Lilypond system-system-spacing
+\newcommand{\betweenLilyPondSystem}[1]{\vspace{10mm}\linebreak} 
+
+\author{
+	Jacopo Binosi\\
+	\small{
+		\texttt{b4inoz at gmail.com}
+	}
+}
+
+\title{Titolo\\\small{Sottotitolo 1}\\\small{27 Settembre 2014}}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\chapter{Yatra Ta (Tania Maria)}
+\label{cha:yattrata}
+\input{chapters/yattrata.lytex}
+
+\chapter{We Gio (P. Vairo)}
+\label{cha:wegio}
+\input{chapters/marcowegio.lytex}
+
+\chapter{Molosses Run (Weather Report - Omar Hakim)}
+\label{cha:omarhakim}
+\input{chapters/omar_hakim.lytex}
+
+\chapter{Love is Stronger than Justice (Sting - Vinnie Colaiuta)}
+\label{cha:vinniecolaiuta}
+\input{chapters/vinnie_colaiuta.lytex}
+
+\chapter{Grooves in 5/4}
+\label{cha:marco54}
+\input{chapters/marco5quarti.lytex}
+
+\chapter{Sunny (Miles Davis)}
+\label{cha:marcosunny}
+\input{chapters/marcosunny.lytex}
+
+\chapter{So What (Miles Davis)}
+\label{cha:marcosowhat}
+\input{chapters/marcosowhat.lytex}
+
+\chapter{Footprints (Miles Davis)}
+\label{cha:marcoclavetern}
+\input{chapters/marcoclavetern.lytex}
+
+\end{document}
+

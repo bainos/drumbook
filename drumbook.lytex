@@ -44,22 +44,20 @@
 %%%%%%%%%%%%%%%%%
 % COVER Page
 
-%% \newgeometry{left=-0.1in, right=-0.1in, top=-0.1in, bottom=-0.1in}
-%% \noindent\makebox[\textwidth][b]{
-%%     \includegraphics[
-%%         width=\textwidth,
-%%         height=\dimexpr\textheight-0.1\baselineskip\relax
-%%         ]{../cover.pdf}
-%%     }
-%% \restoregeometry
+\newgeometry{left=-0.1in, right=-0.1in, top=-0.1in, bottom=-0.1in}
+\noindent\makebox[\textwidth][b]{
+    \includegraphics[
+        width=\textwidth,
+        height=\dimexpr\textheight-0.1\baselineskip\relax
+        ]{../cover.pdf}
+    }
+\restoregeometry
 
 %%%%%%%%%%%%%%%%%
 
 \maketitle
 
-\begin{abstract}
-Little abstract
-\end{abstract}
+\input{abstract.tex}
 
 \newpage
 
@@ -67,35 +65,35 @@ Little abstract
 
 \newpage
 
-\chapter{Tania Maria  -  Yattrat\`a}
+\addchap{Yatra Ta (Tania Maria)}
 \label{cha:yattrata}
 \input{chapters/yattrata.lytex}
 
-\chapter{Marco Raimondi - We Gio}
+\addchap{We Gio (P. Vairo)}
 \label{cha:wegio}
 \input{chapters/marcowegio.lytex}
 
-\chapter{Omar Hakim - Molosses Run}
+\addchap{Molosses Run (Weather Report - Omar Hakim)}
 \label{cha:omarhakim}
 \input{chapters/omar_hakim.lytex}
 
-\chapter{Vinnie Colaiuta - Love is Stronger than Justice}
+\addchap{Love is Stronger than Justice (Sting - Vinnie Colaiuta)}
 \label{cha:vinniecolaiuta}
 \input{chapters/vinnie_colaiuta.lytex}
 
-\chapter{Marco Raimondi - Grooves in 5/4}
+\addchap{Grooves in 5/4}
 \label{cha:marco54}
 \input{chapters/marco5quarti.lytex}
 
-\chapter{Marco Raimondi - Sunny}
+\addchap{Sunny (Miles Davis)}
 \label{cha:marcosunny}
 \input{chapters/marcosunny.lytex}
 
-\chapter{Marco Raimondi - So What}
+\addchap{So What (Miles Davis)}
 \label{cha:marcosowhat}
 \input{chapters/marcosowhat.lytex}
 
-\chapter{Marco Raimondi - Clave Ternarie}
+\addchap{Footprints (Miles Davis)}
 \label{cha:marcoclavetern}
 \input{chapters/marcoclavetern.lytex}
 
