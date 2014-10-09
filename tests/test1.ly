@@ -6,6 +6,8 @@
   subtitle = "Tania Maria"
 }
 
+\markup { \circle "A"}
+
 \markup {\raise #4.0 "Intro" }
 \score {
   \new DrumStaff <<
@@ -72,10 +74,10 @@
     }
   >>
 }
+\markup {\raise #4.0 "Groove A" }
 \score {
   \new DrumStaff <<
     %\tempo 4 = 85
-    \mark "Groove A"
     \drummode {
       \time 4/4
       <<
@@ -94,10 +96,11 @@
     }
   >>
 }
+
+\markup {\raise #4.0 "Groove B" }
 \score {
   \new DrumStaff <<
     %\tempo 4 = 85
-    \mark "Groove B"
     \drummode {
       \time 4/4
       <<
