@@ -23,13 +23,46 @@
   \override Score.SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4) 
   \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
   \override Score.SpacingSpanner.shortest-duration-space = #10
-
   \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \context {
+    \Score
+    \remove "Bar_number_engraver"
+  }
   
   \set DrumStaff.drumStyleTable = #(alist->hash-table dbdrums)
-
+  %\override DrumStaff.TimeSignature #'space-alist #'first-note = #'(fixed-space . 2)
+  %\override DrumStaff.Clef #'space-alist #'first-note = #'(minimum-fixed-space . 3.8)
+  \context {
+    \DrumStaff
+    \numericTimeSignature
+    %firstClef = ##f
+    %\remove "Clef_engraver"
+    %\remove "Time_signature_engraver"
+    %\remove "Bar_engraver"
+  }
   % REQUIRES drumrests.ly
   \override DrumStaff.RestCollision #'positioning-done = #merge-rests-on-positioning
+
+        %\override Score.LeftEdge #'space-alist #'clef = #'(fixed-space . 10)
+        %\override Score.LeftEdge #'space-alist #'first-note = #'(fixed-space . 7)
+        %\override Score.Clef #'stencil = #point-stencil
+        %\override DrumStaff.SystemStartBrace #'padding = #10
+%%         \override DrumStaff.TimeSignature #'space-alist = #'(
+%%           (staff-bar extra-space . 0.7)
+%%           (first-note fixed-space . 2.0)
+%%           (right-edge extra-space . 0.5)
+%%           (cue-clef extra-space . 1.5)
+%%         )
+%%         \override DrumStaff.Clef #'space-alist = #'(
+%%           (staff-bar extra-space . 0.7)
+%%           (first-note minimum-fixed-space . 3.8)
+%%           (right-edge extra-space . 0.5)
+%%           (cue-clef extra-space . 1.5)
+%%           (key-cancellation minimum-space . 3.5)
+%%           (key-signature minimum-space . 3.5)
+%%           (time-signature minimum-space . 4.2)
+%%           (next-note extra-space . 1.0)
+%%         )
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

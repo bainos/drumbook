@@ -44,14 +44,14 @@
 %%%%%%%%%%%%%%%%%
 % COVER Page
 
-\newgeometry{left=-0.1in, right=-0.1in, top=-0.1in, bottom=-0.1in}
-\noindent\makebox[\textwidth][b]{
-    \includegraphics[
-        width=\textwidth,
-        height=\dimexpr\textheight-0.1\baselineskip\relax
-        ]{../cover.pdf}
-    }
-\restoregeometry
+%% \newgeometry{left=-0.1in, right=-0.1in, top=-0.1in, bottom=-0.1in}
+%% \noindent\makebox[\textwidth][b]{
+%%     \includegraphics[
+%%         width=\textwidth,
+%%         height=\dimexpr\textheight-0.1\baselineskip\relax
+%%         ]{../cover.pdf}
+%%     }
+%% \restoregeometry
 
 %%%%%%%%%%%%%%%%%
 
@@ -67,37 +67,37 @@ Little abstract
 
 \newpage
 
-\addchap{Tania Maria  -  Yattrat\`a}
+\chapter{Tania Maria  -  Yattrat\`a}
 \label{cha:yattrata}
 \input{chapters/yattrata.lytex}
 
-%% \addchap{Marco Raimondi - We Gio}
-%% \label{cha:wegio}
-%% \input{chapters/marcowegio.lytex}
-%% 
-%% \addchap{Omar Hakim - Molosses Run}
-%% \label{cha:omarhakim}
-%% \input{chapters/omar_hakim.lytex}
-%% 
-%% \addchap{Vinnie Colaiuta - Love is Stronger than Justice}
-%% \label{cha:vinniecolaiuta}
-%% \input{chapters/vinnie_colaiuta.lytex}
-%% 
-%% \addchap{Marco Raimondi - Grooves in 5/4}
-%% \label{cha:marco54}
-%% \input{chapters/marco5quarti.lytex}
-%% 
-%% \addchap{Marco Raimondi - Sunny}
-%% \label{cha:marcosunny}
-%% \input{chapters/marcosunny.lytex}
-%% 
-%% \addchap{Marco Raimondi - So What}
-%% \label{cha:marcosowhat}
-%% \input{chapters/marcosowhat.lytex}
-%% 
-%% \addchap{Marco Raimondi - Clave Ternarie}
-%% \label{cha:marcoclavetern}
-%% \input{chapters/marcoclavetern.lytex}
+\chapter{Marco Raimondi - We Gio}
+\label{cha:wegio}
+\input{chapters/marcowegio.lytex}
+
+\chapter{Omar Hakim - Molosses Run}
+\label{cha:omarhakim}
+\input{chapters/omar_hakim.lytex}
+
+\chapter{Vinnie Colaiuta - Love is Stronger than Justice}
+\label{cha:vinniecolaiuta}
+\input{chapters/vinnie_colaiuta.lytex}
+
+\chapter{Marco Raimondi - Grooves in 5/4}
+\label{cha:marco54}
+\input{chapters/marco5quarti.lytex}
+
+\chapter{Marco Raimondi - Sunny}
+\label{cha:marcosunny}
+\input{chapters/marcosunny.lytex}
+
+\chapter{Marco Raimondi - So What}
+\label{cha:marcosowhat}
+\input{chapters/marcosowhat.lytex}
+
+\chapter{Marco Raimondi - Clave Ternarie}
+\label{cha:marcoclavetern}
+\input{chapters/marcoclavetern.lytex}
 
 \end{document}
 
