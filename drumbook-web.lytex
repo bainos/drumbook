@@ -1,25 +1,6 @@
 \listfiles
 \documentclass[12pt,a4paper,titlepage]{report}
 
-% Restore "classic" LaTeX font
-%\addtokomafont{disposition}{\rmfamily}
-
-%\addtokomafont{chapter}{\centering}
-
-% For easy layout tweaking
-%\usepackage[left=1.0in, right=1.0in, top=0.2in, bottom=1.0in]{geometry}
-
-%\usepackage{layout}
-
-% Hyperlink per indice e note
-%\usepackage{hyperref}
-
-% Inserimento di codice sorgente
-%\usepackage{textcomp}
-%\usepackage{verbatim}
-
-\usepackage{graphicx}
-
 % Warkaround for Lilypond system-system-spacing
 \newcommand{\betweenLilyPondSystem}[1]{\vspace{10mm}\linebreak} 
 

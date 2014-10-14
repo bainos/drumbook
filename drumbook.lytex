@@ -77,7 +77,7 @@
 \label{cha:omarhakim}
 \input{chapters/omar_hakim.lytex}
 
-\addchap{Love is Stronger than Justice (Sting - Vinnie Colaiuta)}
+\addchap{Love is Stronger than Justice \small (Sting - Vinnie Colaiuta)}
 \label{cha:vinniecolaiuta}
 \input{chapters/vinnie_colaiuta.lytex}
 

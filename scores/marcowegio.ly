@@ -13,9 +13,9 @@
 
 \markup \roundbox "Struttura A - B - A - C"
 
+\markup {\raise #4.0 "Groove A" }
 \score {
   \new DrumStaff <<
-    \mark "Groove A"
     \drummode {
       \time 4/4
       <<
@@ -39,9 +39,9 @@
   >>
 }
 
+\markup {\raise #4.0 "Groove B" }
 \score {
   \new DrumStaff <<
-    \mark "Groove B"
     \drummode {
       \time 4/4
       <<
@@ -62,9 +62,9 @@
   >>
 }
       
+\markup {\raise #4.0 "Groove C" }
 \score {
   \new DrumStaff <<
-    \mark "Groove C"
     \drummode {
       \time 4/4
       <<

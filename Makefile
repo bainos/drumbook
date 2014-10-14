@@ -15,7 +15,7 @@ HTML=cd $(WEBDIR) && latex2html \
 	-antialias \
 	-transparent \
 	-white \
-	-image_type png \
+	-image_type gif \
 	-local_icons \
 	-address "$(ADDRESS)" \
 	-footnode \
