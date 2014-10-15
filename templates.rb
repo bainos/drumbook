@@ -1,6 +1,16 @@
 module L2H2HTemplates
 
 @templates = {
+    '<!DOCTYPE.*?>' => '
+<!DOCTYPE html>
+',
+    '<HTML>' => '
+<HTML>
+<!--(Re)Converted with LaTeX2HTML2HTML 2014 (1.0)
+Ruby script by
+* Jacopo Binosi
+* b4inoz@gmail.com -->
+',
     '<BODY.*?>' => '
 <BODY>
 <div class="wrapper">

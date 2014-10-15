@@ -1,10 +1,10 @@
 \version "2.18.2"
 \include "../layout/layout.ly"
 
-\header {
-  title = "So What"
-  subtitle = "Miles Davis - Batteria originale di Marco Raimondi"
-}
+% \header {
+%   title = "So What"
+%   subtitle = "Miles Davis - Batteria originale di Marco Raimondi"
+% }
 
 % Accompagnamento
 accmusic = \drummode {hh8^"Senso Shuffle" hh}

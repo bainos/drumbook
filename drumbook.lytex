@@ -1,5 +1,11 @@
 \listfiles
-\documentclass[12pt,a4paper,titlepage]{scrreprt}
+\documentclass[
+12pt,
+a4paper,
+titlepage
+headsepline=true,
+footsepline=true
+]{scrreprt}
 
 % Restore "classic" LaTeX font
 \addtokomafont{disposition}{\rmfamily}
@@ -7,7 +13,10 @@
 \addtokomafont{chapter}{\centering}
 
 % For easy layout tweaking
-\usepackage[left=1.0in, right=1.0in, top=0.2in, bottom=1.0in]{geometry}
+\usepackage[left=1.0in, right=1.0in, top=1.0in, bottom=1.5in]{geometry}
+
+% Remove space before headings (KOMA - script)
+\renewcommand{\chapterheadstartvskip}{\vspace *{-\baselineskip }}
 
 \usepackage{layout}
 
@@ -65,35 +74,35 @@
 
 \newpage
 
-\addchap{Yatra Ta (Tania Maria)}
+\addchap{Yatra Ta\\ \normalsize Tania Maria}
 \label{cha:yattrata}
 \input{chapters/yattrata.lytex}
 
-\addchap{We Gio (P. Vairo)}
+\addchap{We Gio \\ \normalsize P. Vairo}
 \label{cha:wegio}
 \input{chapters/marcowegio.lytex}
 
-\addchap{Molosses Run (Weather Report - Omar Hakim)}
+\addchap{Molosses Run \\ \normalsize Weather Report - Omar Hakim}
 \label{cha:omarhakim}
 \input{chapters/omar_hakim.lytex}
 
-\addchap{Love is Stronger than Justice \small (Sting - Vinnie Colaiuta)}
+\addchap{Love is Stronger than Justice \\ \normalsize Sting - Vinnie Colaiuta}
 \label{cha:vinniecolaiuta}
 \input{chapters/vinnie_colaiuta.lytex}
 
-\addchap{Grooves in 5/4}
+\addchap{Grooves in 5/4 \\ \normalsize Marco Raimondi}
 \label{cha:marco54}
 \input{chapters/marco5quarti.lytex}
 
-\addchap{Sunny (Miles Davis)}
+\addchap{Sunny \\ \normalsize Miles Davis}
 \label{cha:marcosunny}
 \input{chapters/marcosunny.lytex}
 
-\addchap{So What (Miles Davis)}
+\addchap{So What \\ \normalsize Miles Davis}
 \label{cha:marcosowhat}
 \input{chapters/marcosowhat.lytex}
 
-\addchap{Footprints (Miles Davis)}
+\addchap{Footprints \\ \normalsize Miles Davis}
 \label{cha:marcoclavetern}
 \input{chapters/marcoclavetern.lytex}
 

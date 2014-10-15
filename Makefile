@@ -24,7 +24,7 @@ HTMLCSS=cp layout/lilypond-manuals.css $(WEBDIR)/$(WEBFILE)/style.css
 #INDEX=cd $(OUTDIR) && makeindex $(FILE)
 PREVIEW=$(VIEWER) $(OUTDIR)/$(FILE).pdf &
 
-all: pdf keep
+all: pdf web keep
 
 pdf:
 	$(LILYBOOK_PDF)  # begin with tab
@@ -38,7 +38,8 @@ web:
 	$(HTML)          # begin with tab
 	$(HTMLCSS)       # begin with tab
 	cp -R $(WEBDIR)/$(WEBFILE)/ ./  # begin with tab
-	$(BROWSER) $(WEBFILE)/$(WEBFILE).html &  # begin with tab
+	ruby l2h2h.rb
+	$(BROWSER) $(WEBFILE)-pretty/$(WEBFILE).html &  # begin with tab
 
 keep: pdf
 	cp $(OUTDIR)/$(FILE).pdf $(FILE).pdf  # begin with tab

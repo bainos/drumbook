@@ -1,10 +1,10 @@
 \version "2.18.2"
 \include "../layout/layout.ly"
 
-\header {
-  title = "Love is Stronger than Justice"
-  subtitle = "Sting - Batteria originale di Vinnie Colaiuta"
-}
+% \header {
+%   title = "Love is Stronger than Justice"
+%   subtitle = "Sting - Batteria originale di Vinnie Colaiuta"
+% }
 
 \score {
   \new DrumStaff <<

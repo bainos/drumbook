@@ -1,10 +1,10 @@
 \version "2.18.2"
 \include "../layout/layout.ly"
 
-\header {
-  title = "Sunny"
-  subtitle = "Miles Davis - Batteria originale di Marco Raimondi"
-}
+% \header {
+%   title = "Sunny"
+%   subtitle = "Miles Davis - Batteria originale di Marco Raimondi"
+% }
 
 \score {
   \new DrumStaff <<

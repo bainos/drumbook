@@ -1,10 +1,10 @@
 \version "2.18.2"
 \include "../layout/layout.ly"
 
-\header {
-  title = "Yatra Ta"
-  subtitle = "Tania Maria"
-}
+% \header {
+%   title = "Yatra Ta"
+%   subtitle = "Tania Maria"
+% }
 
 \markup {\raise #4.0 "Intro" }
 \score {

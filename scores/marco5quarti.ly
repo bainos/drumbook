@@ -1,10 +1,10 @@
 \version "2.18.2"
 \include "../layout/layout.ly"
 
-\header {
-  title = "Groove in 5/4"
-  subtitle = "Batteria originale di Marco Raimondi"
-}
+% \header {
+%   title = "Groove in 5/4"
+%   subtitle = "Batteria originale di Marco Raimondi"
+% }
 
 \score {
   \new DrumStaff <<

@@ -1,11 +1,11 @@
 \version "2.18.2"
 \include "../layout/layout.ly"
 
-\header {
-  title = "Footprints"
-  subtitle = "Miles Davis - Batteria originale di Marco Raimond"
-  subsubtitle = "Clave Ternaria"
-}
+% \header {
+%   title = "Footprints"
+%   subtitle = "Miles Davis - Batteria originale di Marco Raimond"
+%   subsubtitle = "Clave Ternaria"
+% }
 
 \score {
   \new DrumStaff <<

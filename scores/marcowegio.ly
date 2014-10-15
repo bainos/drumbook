@@ -1,10 +1,10 @@
 \version "2.18.2"
 \include "../layout/layout.ly"
 
-\header {
-  title = "We Gio"
-  subtitle = "P. Vairo - Batteria originale di Marco Raimondi"
-}
+% \header {
+%   title = "We Gio"
+%   subtitle = "P. Vairo - Batteria originale di Marco Raimondi"
+% }
 
 #(define mydrums '(
    (footpedal   cross   #f -8)

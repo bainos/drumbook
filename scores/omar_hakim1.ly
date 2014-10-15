@@ -1,10 +1,10 @@
 \version "2.18.2"
 \include "../layout/layout.ly"
 
-\header {
-  title = "Molosses Run"
-  subtitle = "Weather Report - Batteria originale di Omar Hakim"
-}
+% \header {
+%   title = "Molosses Run"
+%   subtitle = "Weather Report - Batteria originale di Omar Hakim"
+% }
 
 \score {
   \new DrumStaff <<

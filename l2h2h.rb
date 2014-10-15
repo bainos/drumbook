@@ -5,6 +5,19 @@ require 'fileutils'
 HTML_SOURCE = File.join(Dir::pwd , 'drumbook-web')
 HTML_TARGET = File.join(Dir::pwd , 'drumbook-web-pretty')
 STYLESHEET = File.join(Dir::pwd , "drumbook-web-pretty.css")
+CONTENTS = File.join(HTML_SOURCE, "node1.html")
+
+def handleContents(contents_file,start_href,about_href)
+    doc = Nokogiri::HTML(File.open(contents_file))
+    contents = "\n<div class=\"toc\">\n"
+    contents << "<ul id='start'>\n<li><a name='start' href='#{start_href}'>Start</a></li>\n</ul>" \
+        unless start_href.nil?
+    contents << doc.css('ul').to_s
+    contents << "<ul id='about'>\n<li><a name='about' href='#{about_href}'>About..</a></li>\n</ul>" \
+        unless about_href.nil?
+    contents << "\n</div><!-- .toc -->\n"
+    @toc = Nokogiri::HTML.parse(contents)
+end
 
 def prettyHtml(html_file)
     page = ''
@@ -23,6 +36,26 @@ def prettyHtml(html_file)
         doc.css('aside.left-sidebar').last.remove
         doc.css('div.container').last.remove
     end
+
+    start_href = nil
+    about_href = nil
+    doc.css('aside.left-sidebar').children.each do |child|
+        unless child.at_css('img').nil?
+            if child.at_css('img')['alt'] == 'up'
+                start_href = child['href']
+            end
+        end
+        if child.content.match(/About this .+/)
+            about_href = child['href']
+        end
+        child.remove
+    end
+
+    handleContents(CONTENTS,start_href,about_href)
+    @toc.at_css('div.toc').parent = doc.at_css('aside.left-sidebar')
+
+    doc.at_css('h1').parent = doc.at_css('div.header') \
+        unless doc.at_css('h1').nil?
 
     File.open(File.join(HTML_TARGET,File.basename(html_file)), "w") \
         { |f| f << doc.to_s.gsub(/^\s*$\n/, '').strip }
@@ -43,9 +76,10 @@ end
 
 Dir.mkdir(HTML_TARGET)
  
-Dir[File.join(HTML_SOURCE , '*.html')].each do |node|
+Dir[File.join(HTML_SOURCE , '*.html')].each do |node|    
     puts "Converting node: " + node
     prettyHtml(node)
+    #exit 1
 end
 
 FileUtils.cp(STYLESHEET, File.join(HTML_TARGET,'style.css')) 
