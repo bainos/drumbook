@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require './templates.rb'
 require 'nokogiri'
 require 'fileutils'
@@ -57,9 +59,12 @@ def prettyHtml(html_file)
     doc.at_css('h1').parent = doc.at_css('div.header') \
         unless doc.at_css('h1').nil?
 
-    File.open(File.join(HTML_TARGET,File.basename(html_file)), "w") \
+    target_file = File.join(HTML_TARGET,File.basename(html_file)) 
+    File.open(target_file, "w") \
         { |f| f << doc.to_s.gsub(/^\s*$\n/, '').strip }
-    #%x(vim node7mod.html -c "execute 'normal gg=G' | :wq")
+
+    # Uncomment for source indentation
+    #%x(vim #{target_file} -c "execute 'normal gg=G' | :wq")
 end
 
 
