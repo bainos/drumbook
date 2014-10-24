@@ -4,7 +4,7 @@ WEBFILE=drumbook-web
 OUTDIR=out
 WEBDIR=htmlout
 VIEWER=evince-previewer
-BROWSER=firefox
+BROWSER=chromium
 ADDRESS=b4inoz at gmail dot com - Last Update: `date +'%y.%m.%d %H:%M:%S'`
 LILYBOOK_PDF=lilypond-book --output=$(OUTDIR) --pdf $(FILE).lytex
 LILYBOOK_HTML=lilypond-book --output=$(WEBDIR) $(WEBFILE).lytex
