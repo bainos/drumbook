@@ -22,15 +22,18 @@ def handleContents(contents_file,start_href,about_href)
 end
 
 def prettyHtml(html_file)
+    puts "=> " + html_file
     page = ''
     File.open(html_file) do |f|
         f.each_line do |l|
             L2H2HTemplates.templates.each do |k,v|
                  l = l.gsub(/#{k}/i,v)
             end
+            l = l.gsub(/<BR>/i,'') \
+                unless html_file =~ /.*(index|drumbook-web)\.html$/
         page << l
         end
-    end
+    end 
 
     doc = Nokogiri::HTML.parse(page)
 
@@ -83,7 +86,7 @@ Dir.mkdir(HTML_TARGET)
  
 Dir[File.join(HTML_SOURCE , '*.html')].each do |node|    
     puts "Converting node: " + node
-    prettyHtml(node)
+    prettyHtml(node) 
     #exit 1
 end
 

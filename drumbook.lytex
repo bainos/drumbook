@@ -33,15 +33,15 @@ footsepline=true
 \newcommand{\betweenLilyPondSystem}[1]{\vspace{10mm}\linebreak} 
 
 \author{
-	Jacopo Binosi\\
+	\small{Developed by Jacopo Binosi}\\
 	\small{
 		\texttt{b4inoz at gmail.com}
 	}
 }
 
-\title{Titolo\\\small{Sottotitolo 1}\\\small{27 Settembre 2014}}
+\title{Appunti di Batteria\\Marco Raimondi\\\small{Novembre 2014}}
 
-\date{\today}
+\date{}
 
 \begin{document}
 
@@ -58,7 +58,7 @@ footsepline=true
     \includegraphics[
         width=\textwidth,
         height=\dimexpr\textheight-0.1\baselineskip\relax
-        ]{../cover.pdf}
+        ]{../cover.jpg}
     }
 \restoregeometry
 

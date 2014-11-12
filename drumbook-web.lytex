@@ -5,19 +5,22 @@
 \newcommand{\betweenLilyPondSystem}[1]{\vspace{10mm}\linebreak} 
 
 \author{
-	Jacopo Binosi\\
+	\small{Developed by Jacopo Binosi}\\
 	\small{
-		\texttt{b4inoz at gmail.com}
+		\texttt{b4inoz at gmail.com}\\
+        Novembre 2014
 	}
 }
 
-\title{Titolo\\\small{Sottotitolo 1}\\\small{27 Settembre 2014}}
+\title{Appunti di Batteria - Marco Raimondi}
 
-\date{\today}
+%\date{\today}
 
 \begin{document}
 
 \maketitle
+
+\input{abstract.tex}
 
 \newpage
 

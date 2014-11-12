@@ -39,7 +39,7 @@ web:
 	$(HTMLCSS)       # begin with tab
 	cp -R $(WEBDIR)/$(WEBFILE)/ ./  # begin with tab
 	ruby l2h2h.rb
-	$(BROWSER) $(WEBFILE)-pretty/$(WEBFILE).html &  # begin with tab
+	$(BROWSER) $(WEBFILE)-pretty/index.html &  # begin with tab
 
 keep: pdf
 	cp $(OUTDIR)/$(FILE).pdf $(FILE).pdf  # begin with tab
