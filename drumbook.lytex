@@ -86,9 +86,14 @@ footsepline=true
 \label{cha:omarhakim}
 \input{chapters/omar_hakim.lytex}
 
+\begingroup
+\vspace{50 mm}
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
 \addchap{Love is Stronger than Justice \\ \normalsize Sting - Vinnie Colaiuta}
 \label{cha:vinniecolaiuta}
 \input{chapters/vinnie_colaiuta.lytex}
+\endgroup
 
 \addchap{Grooves in 5/4 \\ \normalsize Marco Raimondi}
 \label{cha:marco54}
@@ -98,9 +103,14 @@ footsepline=true
 \label{cha:marcosunny}
 \input{chapters/marcosunny.lytex}
 
+\begingroup
+\vspace{50 mm}
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
 \addchap{So What \\ \normalsize Miles Davis}
 \label{cha:marcosowhat}
 \input{chapters/marcosowhat.lytex}
+\endgroup
 
 \addchap{Footprints \\ \normalsize Miles Davis}
 \label{cha:marcoclavetern}
