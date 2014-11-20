@@ -50,6 +50,7 @@
         }
         \new DrumVoice {
           \voiceDOWN
+          \override Rest.staff-position = #0
           bd8 bd
           s4
           bd8. bd16

@@ -32,7 +32,7 @@
 \label{cha:yattrata}
 \input{chapters/yattrata.lytex}
 
-\chapter{We Gio (P. Vairo)}
+\chapter{We Gio (P. Vairo - M. Raimondi)}
 \label{cha:wegio}
 \input{chapters/marcowegio.lytex}
 
@@ -44,19 +44,19 @@
 \label{cha:vinniecolaiuta}
 \input{chapters/vinnie_colaiuta.lytex}
 
-\chapter{Grooves in 5/4}
+\chapter{Grooves in 5/4 - M. Raimondi}
 \label{cha:marco54}
 \input{chapters/marco5quarti.lytex}
 
-\chapter{Sunny (Miles Davis)}
+\chapter{Sunny (Bobby Hebb - M. Raimondi)}
 \label{cha:marcosunny}
 \input{chapters/marcosunny.lytex}
 
-\chapter{So What (Miles Davis)}
+\chapter{So What (Miles Davis - M. Raimondi)}
 \label{cha:marcosowhat}
 \input{chapters/marcosowhat.lytex}
 
-\chapter{Footprints (Miles Davis)}
+\chapter{Footprints (Miles Davis - M. Raimondi)}
 \label{cha:marcoclavetern}
 \input{chapters/marcoclavetern.lytex}
 

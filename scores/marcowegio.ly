@@ -27,7 +27,7 @@
           %\shape #'((9 . 1) (23 . 1.7) (36 . 1.7) (48 . 1)) Tie hha~\accent 
           % This is good for lilypond-book
           \shape #'((6 . 1) (13 . 1.7) (25 . 1.7) (36 . 1)) Tie hha~\accent\leu 
-          sn2:32^\markup{ \hspace #20.0 \italic \small Press }
+          sn2:32^\markup{ \hspace #17.5 \italic \small Press }
         }
         \new DrumVoice {
           \voiceDOWN
@@ -74,7 +74,7 @@
           hha\accent\leu sn\riu sn\riu hha\accent\leu
           \once \override Stem.length = #10
           sn4\accent
-          \once \override Stem.length = #16
+          \once \override Stem.length = #17.5
           \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
           <bd hf>4\accent
           %\set DrumStaff.drumStyleTable = #(alist->hash-table dbdrums)

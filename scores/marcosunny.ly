@@ -14,10 +14,10 @@
       <<
         \new DrumVoice {
           \voiceUP
-          sn16\accent hha bd sn
-          hha16\accent \parenthesize sn <hha bd>\accent \parenthesize sn
-          hha16 sn\accent hha \parenthesize sn
-          hha16\accent \parenthesize sn <hha bd>\accent \parenthesize sn
+          sn16\accent\riu hha\leu bd sn\leu
+          hha16\accent\riu \parenthesize sn\leu <hha bd>\accent\riu \parenthesize sn\leu
+          hha16\riu sn\accent\leu hha\riu \parenthesize sn\leu
+          hha16\accent\riu \parenthesize sn\leu <hha bd>\accent\riu \parenthesize sn\leu
 
         }
       >>

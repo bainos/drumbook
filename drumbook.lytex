@@ -78,7 +78,7 @@ footsepline=true
 \label{cha:yattrata}
 \input{chapters/yattrata.lytex}
 
-\addchap{We Gio \\ \normalsize P. Vairo}
+\addchap{We Gio \\ \normalsize P. Vairo - M. Raimondi}
 \label{cha:wegio}
 \input{chapters/marcowegio.lytex}
 
@@ -95,11 +95,11 @@ footsepline=true
 \input{chapters/vinnie_colaiuta.lytex}
 \endgroup
 
-\addchap{Grooves in 5/4 \\ \normalsize Marco Raimondi}
+\addchap{Grooves in 5/4 \\ \normalsize M. Raimondi}
 \label{cha:marco54}
 \input{chapters/marco5quarti.lytex}
 
-\addchap{Sunny \\ \normalsize Miles Davis}
+\addchap{Sunny \\ \normalsize Bobby Hebb - M. Raimondi}
 \label{cha:marcosunny}
 \input{chapters/marcosunny.lytex}
 
@@ -107,12 +107,12 @@ footsepline=true
 \vspace{50 mm}
 \renewcommand{\cleardoublepage}{}
 \renewcommand{\clearpage}{}
-\addchap{So What \\ \normalsize Miles Davis}
+\addchap{So What \\ \normalsize Miles Davis - M. Raimondi}
 \label{cha:marcosowhat}
 \input{chapters/marcosowhat.lytex}
 \endgroup
 
-\addchap{Footprints \\ \normalsize Miles Davis}
+\addchap{Footprints \\ \normalsize Miles Davis - M. Raimondi}
 \label{cha:marcoclavetern}
 \input{chapters/marcoclavetern.lytex}
 

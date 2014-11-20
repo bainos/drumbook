@@ -152,12 +152,14 @@ voiceUP = {
   \voiceOne
   %\override Stem.length = #5
   \override Beam #'positions = #'(5 . 5)
+  \override Rest.staff-position = #0
 }
 
 voiceDOWN = {
   \voiceTwo
   %\override Stem.length = #-5
   \override Beam #'positions = #'(-5 . -5)
+  %\override Rest.staff-position = #0
 }
 
 % Sticking

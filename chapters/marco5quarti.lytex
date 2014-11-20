@@ -3,7 +3,9 @@
 \lilypondfile{scores/marco5quarti.ly}
 \vspace{10mm}
 
-%\newpage
+\newpage
+
+Applicazione dei Rudimenti ad un groove da 4/4 a 5/4 utilizzando il 2° Paradiddle.
 
 \vspace{10mm}
 \lilypondfile{scores/marco5quarti2.ly}

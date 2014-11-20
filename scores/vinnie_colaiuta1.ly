@@ -23,6 +23,7 @@
         }
         \new DrumVoice {
           \voiceDOWN
+          \override Rest.staff-position = #0
           bd8.[ bd16]
           s4
           r16 bd16[ bd8]
