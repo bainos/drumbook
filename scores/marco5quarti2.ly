@@ -35,7 +35,7 @@
           hhao16\rid( sn\led <hha bd>\rid) sn\led
           hhao16\rid( sn\led <hha bd>\rid) sn\led
           hha16\rid sn\led sn\led hha\rid
-          sn16\led hha\rid hha\rid sn\led
+          sn16\led bd bd sn\led
         }
       >>
       %\break

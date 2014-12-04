@@ -50,7 +50,7 @@
           ft16\accent\riu hha\leu hha\leu sn\accent\riu
           hha\accent\leu sn\riu sn\riu hha\accent\leu
           ht\accent\riu \parenthesize sn\leu mt\accent\riu \parenthesize sn\leu
-          ft\accent\riu \parenthesize sn\leu \parenthesize sn\riu sn\accent\leu
+          ft\accent\riu \parenthesize sn\leu \parenthesize sn\riu hha\accent\leu
         }
         \new DrumVoice {
           \voiceDOWN
@@ -72,8 +72,8 @@
           \voiceUP
           ft16\accent\riu hha\leu hha\leu sn\accent\riu
           hha\accent\leu sn\riu sn\riu hha\accent\leu
-          \once \override Stem.length = #10
-          sn4\accent
+          \once \override Stem.length = #11
+          ft4\accent
           \once \override Stem.length = #17.5
           \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
           <bd hf>4\accent
