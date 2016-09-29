@@ -31,7 +31,7 @@ pdf:
 	$(PDF)           # begin with tab
 	#$(INDEX)         # begin with tab
 	$(PDF)           # begin with tab
-	$(PREVIEW)       # begin with tab
+#   $(PREVIEW)       # begin with tab
 
 web:
 	$(LILYBOOK_HTML) # begin with tab
