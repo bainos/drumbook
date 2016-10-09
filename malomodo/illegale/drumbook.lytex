@@ -1,0 +1,78 @@
+\listfiles
+\documentclass[
+12pt,
+a4paper,
+titlepage
+headsepline=true,
+footsepline=true
+]{scrreprt}
+
+% Restore "classic" LaTeX font
+\addtokomafont{disposition}{\rmfamily}
+
+\addtokomafont{chapter}{\centering}
+
+% For easy layout tweaking
+\usepackage[left=1.0in, right=1.0in, top=1.0in, bottom=1.5in]{geometry}
+
+% Remove space before headings (KOMA - script)
+\renewcommand{\chapterheadstartvskip}{\vspace *{-\baselineskip }}
+
+\usepackage{layout}
+
+% Hyperlink per indice e note
+\usepackage{hyperref}
+
+% Inserimento di codice sorgente
+%\usepackage{textcomp}
+%\usepackage{verbatim}
+
+\usepackage{graphicx}
+
+% Warkaround for Lilypond system-system-spacing
+\newcommand{\betweenLilyPondSystem}[1]{\vspace{10mm}\linebreak} 
+
+\author{
+	\small{Developed by Jacopo Binosi}\\
+	\small{
+		\texttt{b4inoz at gmail.com}
+	}
+}
+
+\title{MaloModo\\Illegale\\\small{Novembre 2014}}
+
+\date{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%
+% Per vedere le specifiche di layout decommentare la riga seguente
+%\layout
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%
+% COVER Page
+
+%\newgeometry{left=-0.1in, right=-0.1in, top=-0.1in, bottom=-0.1in}
+%\noindent\makebox[\textwidth][b]{
+%    \includegraphics[
+%        width=\textwidth,
+%        height=\dimexpr\textheight-0.1\baselineskip\relax
+%        ]{../cover.jpg}
+%    }
+%\restoregeometry
+
+%%%%%%%%%%%%%%%%%
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\addchap{Troppi Segreti}
+\label{cha:troppi_segreti}
+\input{chapters/troppi_segreti.lytex}
+
+\end{document}
+
