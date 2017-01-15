@@ -1,0 +1,64 @@
+\listfiles
+\documentclass[12pt,a4paper,titlepage]{report}
+
+% Warkaround for Lilypond system-system-spacing
+\newcommand{\betweenLilyPondSystem}[1]{\vspace{10mm}\linebreak} 
+
+\author{
+	\small{Developed by Jacopo Binosi}\\
+	\small{
+		\texttt{b4inoz at gmail.com}\\
+        Novembre 2014
+	}
+}
+
+\title{Appunti di Batteria - Marco Raimondi}
+
+%\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{abstract.tex}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\chapter{Yatra Ta (Tania Maria)}
+\label{cha:yattrata}
+\input{chapters/yattrata.lytex}
+
+\chapter{We Gio (P. Vairo - M. Raimondi)}
+\label{cha:wegio}
+\input{chapters/marcowegio.lytex}
+
+\chapter{Molosses Run (Weather Report - Omar Hakim)}
+\label{cha:omarhakim}
+\input{chapters/omar_hakim.lytex}
+
+\chapter{Love is Stronger than Justice (Sting - Vinnie Colaiuta)}
+\label{cha:vinniecolaiuta}
+\input{chapters/vinnie_colaiuta.lytex}
+
+\chapter{Grooves in 5/4 - M. Raimondi}
+\label{cha:marco54}
+\input{chapters/marco5quarti.lytex}
+
+\chapter{Sunny (Bobby Hebb - M. Raimondi)}
+\label{cha:marcosunny}
+\input{chapters/marcosunny.lytex}
+
+\chapter{So What (Miles Davis - M. Raimondi)}
+\label{cha:marcosowhat}
+\input{chapters/marcosowhat.lytex}
+
+\chapter{Footprints (Miles Davis - M. Raimondi)}
+\label{cha:marcoclavetern}
+\input{chapters/marcoclavetern.lytex}
+
+\end{document}
+
