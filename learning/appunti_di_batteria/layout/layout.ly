@@ -209,7 +209,70 @@ riu = ^\markup{ \raise #4.5 "R" }
 
 flam = \drummode { 
   \override Stem #'length = #4
+  \slurDown 
   \acciaccatura{ sn8 } 
   \revert Stem #'length
+  \stemUp
 }
 
+flamfunc =
+#(define-music-function
+   (parser location text)
+   (markup?)
+   (define txt-position
+      (if (string=? "R" text)
+	-12
+	-13
+      ))
+   #{
+     \drummode { 
+       \override Stem #'length = #4
+       \slurDown 
+       \acciaccatura{ 
+	 \tweak NoteHead.X-offset #6
+	 \tweak Stem.X-offset #6.9
+         sn8_\markup{ \halign #txt-position \raise #-3.2 \teeny #text }
+       } 
+       \revert Stem #'length
+       \stemUp
+     }
+   #}
+)
+
+flamrid = \flamfunc "R"
+flamled = \flamfunc "L"
+
+drag = \drummode {
+  \grace { 
+    \override Beam #'positions = #'(2.5 . 2.5) 
+    sn8 sn
+  }
+}
+
+dragfunc =
+#(define-music-function
+   (parser location text)
+   (markup?)
+   (define txt-position
+      (if (string=? "R" text)
+	-12
+	-13
+      ))
+   #{
+     \drummode { 
+       \slurDown 
+       \override Beam #'positions = #'(2.1 . 2.1) 
+       \acciaccatura { 
+	 \tweak NoteHead.X-offset #6
+	 \tweak Stem.X-offset #6.9
+         sn16_\markup{ \halign #txt-position \raise #-3.2 \teeny #text }
+         sn16_\markup{ \raise #-3.2 \teeny #text }
+       } 
+       \revert Beam #'positions
+       \stemUp
+     }
+   #}
+)
+
+dragrid = \dragfunc "R"
+dragled = \dragfunc "L"
