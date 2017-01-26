@@ -8,7 +8,7 @@
       <<
         \new DrumVoice {
           \voiceUP
-	  \dragled sn4\rid \dragrid sn\led \dragled sn\rid \dragrid sn\led
+	  \dragled sn4^>\rid \dragrid sn^>\led \dragled sn^>\rid \dragrid sn^>\led
         }
       >>
     }
@@ -22,10 +22,10 @@
       <<
         \new DrumVoice {
           \voiceUP
-          \dragled sn8[\rid sn]\rid
-          \dragrid sn8\led sn\led
-          \dragled sn8\rid sn\rid
-          \dragrid sn8\led sn\led
+          \dragled sn8^>[\rid sn]\rid
+          \dragrid sn8^>\led sn\led
+          \dragled sn8^>\rid sn\rid
+          \dragrid sn8^>\led sn\led
         }
       >>
     }
@@ -39,10 +39,10 @@
       <<
         \new DrumVoice {
           \voiceUP
-	  \dragled \tuplet 3/2 { sn8[\rid sn\rid sn]\rid } 
-	  \dragrid \tuplet 3/2 { sn8\led sn\led sn\led } 
-	  \dragled \tuplet 3/2 { sn8\rid sn\rid sn\rid } 
-	  \dragrid \tuplet 3/2 { sn8\led sn\led sn\led } 
+	  \dragled \tuplet 3/2 { sn8^>[\rid sn\rid sn]\rid } 
+	  \dragrid \tuplet 3/2 { sn8^>\led sn\led sn\led } 
+	  \dragled \tuplet 3/2 { sn8^>\rid sn\rid sn\rid } 
+	  \dragrid \tuplet 3/2 { sn8^>\led sn\led sn\led } 
         }
       >>
     }
@@ -56,10 +56,10 @@
       <<
         \new DrumVoice {
           \voiceUP
-          \dragled sn16[\rid sn\rid sn\rid sn]\rid
-          \dragrid sn16\led sn\led sn\led sn\led
-          \dragled sn16\rid sn\rid sn\rid sn\rid
-          \dragrid sn16\led sn\led sn\led sn\led
+          \dragled sn16^>[\rid sn\rid sn\rid sn]\rid
+          \dragrid sn16^>\led sn\led sn\led sn\led
+          \dragled sn16^>\rid sn\rid sn\rid sn\rid
+          \dragrid sn16^>\led sn\led sn\led sn\led
         }
       >>
     }

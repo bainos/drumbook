@@ -261,14 +261,12 @@ dragfunc =
    #{
      \drummode { 
        \slurDown 
-       \override Beam #'positions = #'(2.1 . 2.1) 
        \acciaccatura { 
 	 \tweak NoteHead.X-offset #6
 	 \tweak Stem.X-offset #6.9
-         sn16_\markup{ \halign #txt-position \raise #-3.2 \teeny #text }
-         sn16_\markup{ \raise #-3.2 \teeny #text }
+         sn16[_\markup{ \halign #txt-position \raise #-3.2 \teeny #text }
+         sn16]_\markup{ \raise #-3.2 \teeny #text }
        } 
-       \revert Beam #'positions
        \stemUp
      }
    #}
