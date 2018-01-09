@@ -4,3 +4,5 @@ out/
 drumbook/
 drumbook-web/
 drumbook-web-pretty/
+*.DS_Store
+*.swp
