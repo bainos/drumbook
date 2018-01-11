@@ -8,8 +8,8 @@
 #(ly:set-option 'relative-includes #f)
 
 \paper {
-  system-system-spacing #'basic-distance = #15
-  score-system-spacing #'basic-distance = #25
+  %system-system-spacing #'basic-distance = #15
+  %score-system-spacing #'basic-distance = #25
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

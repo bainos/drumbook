@@ -70,13 +70,17 @@ footsepline=true
 
 \newpage
 
-\addchap{Paradiddles}
-\label{cha:paradiddles}
-\input{chapters/001_paradiddles.lytex}
+% \addchap{Paradiddles}
+% \label{cha:paradiddles}
+% \input{chapters/001_paradiddles.lytex}
+% 
+% \addchap{Timing}
+% \label{cha:timing}
+% \input{chapters/002_timing.lytex}
 
-\addchap{Timing}
-\label{cha:timing}
-\input{chapters/002_timing.lytex}
+\addchap{Songs}
+\label{cha:songs}
+\input{chapters/003_songs.lytex}
 
 \end{document}
 
