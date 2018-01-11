@@ -6,3 +6,7 @@ drumbook-web/
 drumbook-web-pretty/
 *.DS_Store
 *.swp
+*.eps
+*.count
+*.tex
+*.texi
