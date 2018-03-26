@@ -1,6 +1,7 @@
 \vspace{10mm}
 \section{Jordu}
 \lilypondfile{scores/song_jordu.ly}
+\pagebreak
 \section{Joy spring}
 \lilypondfile{scores/song_joy_spring.ly}
 \pagebreak

@@ -82,5 +82,9 @@ footsepline=true
 \label{cha:songs}
 \input{chapters/003_songs.lytex}
 
+\addchap{Rithms}
+\label{cha:rithms}
+\input{chapters/004_montuno.lytex}
+
 \end{document}
 
