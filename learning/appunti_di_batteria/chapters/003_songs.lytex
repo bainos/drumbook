@@ -7,4 +7,8 @@
 \pagebreak
 \section{Tidal breeze}
 \lilypondfile{scores/song_tidal_breeze.ly}
+\pagebreak
+\section{Four - Stan Getz}
+\vspace{10mm}
+\lilypondfile{scores/song_four_stan_getz.ly}
 \vspace{10mm}
