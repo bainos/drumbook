@@ -77,14 +77,18 @@ footsepline=true
 % \addchap{Timing}
 % \label{cha:timing}
 % \input{chapters/002_timing.lytex}
+% 
+% \addchap{Songs}
+% \label{cha:songs}
+% \input{chapters/003_songs.lytex}
+% 
+% \addchap{Rithms}
+% \label{cha:rithms}
+% \input{chapters/004_montuno.lytex}
 
-\addchap{Songs}
-\label{cha:songs}
-\input{chapters/003_songs.lytex}
-
-\addchap{Rithms}
-\label{cha:rithms}
-\input{chapters/004_montuno.lytex}
+\addchap{Jazz Snipets}
+\label{cha:jazzsnip}
+\input{chapters/005_jazz_snippets.lytex}
 
 \end{document}
 

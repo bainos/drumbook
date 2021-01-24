@@ -25,10 +25,10 @@
       <<
         \new DrumVoice {
           \voiceUP
-          sn16\rid sn\led sn\led sn16\accent\led
-          sn16\led sn\rid sn\rid sn16\accent\rid
-          sn16\rid sn\led sn\led sn16\accent\led
-          sn16\led sn\rid sn\rid sn16\accent\rid
+          sn16\rid sn\led sn\led sn16\accent\rid
+          sn16\led sn\rid sn\rid sn16\accent\led
+          sn16\rid sn\led sn\led sn16\accent\rid
+          sn16\led sn\rid sn\rid sn16\accent\led
         }
       >>
     }
