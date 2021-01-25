@@ -9,11 +9,51 @@
       <<
         \new DrumVoice {
           \voiceUP
-          \tuplet 3/2 {hh sn sn} \tuplet 3/2 {hh sn hh} \tuplet 3/2 {hh sn sn} \tuplet 3/2 {hh sn sn}
-          \tuplet 3/2 {hh sn hh} \tuplet 3/2 {hh sn sn} \tuplet 3/2 {hh sn sn} \tuplet 3/2 {hh sn hh}
+          hh4                     \tuplet 3/2 {hh4 hh8}   hh4                     hh4
+          \tuplet 3/2 {hh4 hh8}   hh4                     hh4                     \tuplet 3/2 {hh4 hh8}
           \break
-          \tuplet 3/2 {hh sn sn} \tuplet 3/2 {hh sn sn} \tuplet 3/2 {hh sn hh} \tuplet 3/2 {hh sn sn}
-          \tuplet 3/2 {hh sn sn} \tuplet 3/2 {hh sn hh} \tuplet 3/2 {hh sn sn} \tuplet 3/2 {hh sn sn}
+          hh4                     hh4                     \tuplet 3/2 {hh4  hh8}  hh4
+          hh4                     \tuplet 3/2 {hh4  hh8}  hh4                     hh4
+        }
+      >>
+      %\break
+    }
+  >>
+}
+
+\score {
+  \new DrumStaff <<
+    %\tempo 4 = 85
+    \drummode {
+      \time 4/4
+      <<
+        \new DrumVoice {
+          \voiceUP
+          \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn hh} \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn sn}
+          \tuplet 3/2 {hh8 sn hh} \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn hh}
+          \break
+          \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn hh} \tuplet 3/2 {hh8 sn sn}
+          \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn hh} \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn sn}
+        }
+      >>
+      %\break
+    }
+  >>
+}
+
+\score {
+  \new DrumStaff <<
+    %\tempo 4 = 85
+    \drummode {
+      \time 4/4
+      <<
+        \new DrumVoice {
+          \voiceUP
+          \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn hh} \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 bd bd}
+          \tuplet 3/2 {hh8 sn hh} \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 bd bd} \tuplet 3/2 {hh8 sn hh}
+          \break
+          \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 bd bd} \tuplet 3/2 {hh8 sn hh} \tuplet 3/2 {hh8 sn sn}
+          \tuplet 3/2 {hh8 bd bd} \tuplet 3/2 {hh8 sn hh} \tuplet 3/2 {hh8 sn sn} \tuplet 3/2 {hh8 sn sn}
         }
       >>
       %\break
